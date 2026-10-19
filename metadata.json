@@ -1,0 +1,6 @@
+{
+  "name": "Type-o-graphy",
+  "description": "Atlas interactivo de anatomía, historia canónica (Robert Bringhurst), laboratorio paramétrico y tests gamificados de tipografía.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

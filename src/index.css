@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-ui {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+  .font-venetian {
+    font-family: 'Cardo', 'Alegreya', 'EB Garamond', serif;
+  }
+  .font-trajan {
+    font-family: 'Cinzel', serif;
+  }
+  .font-garamond {
+    font-family: 'EB Garamond', Garamond, Georgia, serif;
+  }
+  .font-baskerville {
+    font-family: 'Libre Baskerville', Baskerville, serif;
+  }
+  .font-bodoni {
+    font-family: 'Bodoni Moda', 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .font-clarendon {
+    font-family: 'Besley', 'Alfa Slab One', Georgia, serif;
+  }
+  .font-futura {
+    font-family: 'League Spartan', 'Jost', system-ui, sans-serif;
+  }
+  .font-sans-modern {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  .font-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+  .font-mono-code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbar for horizontal museum timelines */
+.museum-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.museum-scrollbar::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+.museum-scrollbar::-webkit-scrollbar-thumb {
+  background: #c8bfb0;
+  border-radius: 3px;
+}
+.museum-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #EA580C;
+}
+
+/* Print optimizations for PDF export */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, nav, .print\:hidden {
+    display: none !important;
+  }
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
